@@ -1,0 +1,6 @@
+/bin/
+*.class
+*.swp
+.project
+
+/nbproject/private/
