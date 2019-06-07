@@ -32,7 +32,7 @@ public class Main {
     facebook.setOAuthAccessToken(new AccessToken(accsToken, null));
     
     
-    System.out.println("Program END");
+    System.out.println("Program END...");
   }
   
 }
