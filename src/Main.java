@@ -21,14 +21,13 @@ import java.util.logging.*;
  * @author brbr
  */
 public class Main {
-  //private final static Logger logger = Logger.getLogger("Main");
+  
   private static final String appId = "528528921012854";
 	private static final String secretId = "7a0715854fd52c5c1dd6daed2252e046";
 	private static final String accsToken = "EAAHgsbqXKnYBAKOMfwvtAU95DcGknBf9V9ZAbg9MfrsVHAQquQ8NZBZA6vflosJ25iucuF79AJXCsIGY5AnGMKPgXj3eAAB9QsTon8dvtXAYkZAWZBzk0C55VaEHx0wTYIF6FaA4DXtcEI6UHqhj900zu1fPeGO2oElKEPoWXUKSZBGqzeC5uAIy8KVRZAkmokZD";
-  //private final static Logger LOG_RAIZ = Logger.getLogger("bitacora");
-  //private final static Logger LOGGER = Logger.getLogger("bitacora.Bitacora");
   private final static Logger logger = Logger.getLogger("Main");
-
+  private static final String APP_VERSION = "v1.0";
+  
   
   /**
    * @param args the command line arguments
@@ -48,6 +47,8 @@ public class Main {
     logger.addHandler(fileHandler);
     consoleHandler.setLevel(Level.ALL);
     fileHandler.setLevel(Level.ALL);
+    
+    
     
     logger.log(Level.INFO, "Fin del programa");
     System.out.println("Program END");
