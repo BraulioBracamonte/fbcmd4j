@@ -77,7 +77,19 @@ public class Main {
           break;
         
         case 2:
-          System.out.println("Dos!");
+          ResponseList objs = facebook.getAlbums();
+          System.out.println("Descargando lista de albumes");
+          logger.log(Level.INFO, "Descargando lista de albumes" );
+          System.out.println("¿Deseas guardar los resultados?\n1-> Si\n2-> No\n");
+          if(getUsrIn(2)==1){
+            System.out.println("Guardando la lista de los albumes");
+            List<String> lineas = new ArrayList<>();
+            objs.forEach((p)->lineas.add(p.toString()) );
+            Path ruta = Paths.get(Paths.get("") + "albumes.txt");
+            Files.write(ruta, lineas, Charset.forName("UTF-8"));
+            logger.log(Level.INFO, "se guardó la lista de albumes en \"albumes.txt\"" );
+          }
+          objs.forEach((p)->System.out.println(p) );//*/
           break;
           
         default:
