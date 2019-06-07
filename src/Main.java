@@ -31,14 +31,6 @@ public class Main {
     facebook.setOAuthAppId(appId, secretId);
     facebook.setOAuthAccessToken(new AccessToken(accsToken, null));
     
-    ResponseList friends = facebook.getFriends();
-    //ResponseList feed = facebook.getFeed() ;
-    
-    System.out.println(friends.getClass().getName() );/*
-    friends.forEach((f), System.out.println("") );/*
-foreach(Friend friend : friends){
-    System.out.println(friend);
-}//*/
     
     System.out.println("Program END");
   }
