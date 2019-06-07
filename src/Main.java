@@ -4,7 +4,14 @@ import facebook4j.*;
 import facebook4j.FacebookFactory;
 import facebook4j.auth.AccessToken;
 import java.io.IOException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 //import facebook4j.internal.logging.Logger;
 import java.util.logging.*;
@@ -26,7 +33,7 @@ public class Main {
   
   private static final String appId = "528528921012854";
 	private static final String secretId = "7a0715854fd52c5c1dd6daed2252e046";
-	private static final String accsToken = "EAAHgsbqXKnYBALWCmhZCZAVt8ZBPrrOCV8EOxO9PJVZAUoml1aGQPnCgUeywDNhdaH8ZC3o0HhMnpmwMQ7jW75nm8TS1pmuyhpuLil8ZBz2YZAKpcdPxHFiWy67j97EVvxtmQGWUbKUCqI0UsdfQtUkcP2tfg1m1y8UCY8bh6VKJ9Lx7ZCNzSN1KifahZBLfCZARMbWRjOw2jHXDoGp5q8quIo7sUrH2XOoBZCufqjWrHP2DAZDZD";
+	private static final String accsToken = "EAAHgsbqXKnYBAKUPZCgAT1MI5vB9tufNzUKQqWoi6KZBuZB5lBp8JuOEvunRogZAyjXHcynJzjMMDTZAi9qIe4X0ltN5cygyPvnnySjIorUeZB6U7o6H3hZC3UwAeHuBRGjwUPv4uw4LbIkQ7MVUEbzPq8owrZBOewoz1J1H7VbUS0VrcabBEDLbTZAGqdZA6KWXgZD";
   private final static Logger logger = Logger.getLogger("Main");
   private static final String APP_VERSION = "v1.0";
   
@@ -56,8 +63,8 @@ public class Main {
     while(opt != 0 ){
       //Imprimir menu
       System.out.println("opciones:");
-      System.out.println("1-> Obtener los Posts");
-      System.out.println("2-> opt dos");
+      System.out.println("1-> Opcion uno");
+      System.out.println("2-> Opcion dos");
       System.out.println("3-> Salir");
       
       //get option
@@ -66,7 +73,7 @@ public class Main {
       //switch
       switch (opt){
         case 1:
-          System.out.println("Obtener los Posts");
+          System.out.println("Uno!");
           break;
         
         case 2:
@@ -84,6 +91,8 @@ public class Main {
     logger.log(Level.INFO, "Fin del programa");
     //System.out.println("Program END");
     }
+  
+    //public static void saveFile( )
   
     /**
     * obtener la entrada del usario limitando su respuesta
