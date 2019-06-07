@@ -56,25 +56,27 @@ public class Main {
     while(opt != 0 ){
       //Imprimir menu
       System.out.println("opciones:");
-      System.out.println("1-> opt uno");
+      System.out.println("1-> Obtener los Posts");
       System.out.println("2-> opt dos");
+      System.out.println("3-> Salir");
       
       //get option
-      opt = getUsrIn(2);
-      System.out.println(opt);
+      opt = getUsrIn(3);
       
       //switch
       switch (opt){
         case 1:
-          System.out.println("Uno!");
+          System.out.println("Obtener los Posts");
           break;
         
         case 2:
           System.out.println("Dos!");
+          break;
           
+        default:
+          opt = 0;
       }
       
-      opt = 0;
     }
     
     enterp();
