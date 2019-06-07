@@ -26,7 +26,7 @@ public class Main {
   
   private static final String appId = "528528921012854";
 	private static final String secretId = "7a0715854fd52c5c1dd6daed2252e046";
-	private static final String accsToken = "EAAHgsbqXKnYBAKOMfwvtAU95DcGknBf9V9ZAbg9MfrsVHAQquQ8NZBZA6vflosJ25iucuF79AJXCsIGY5AnGMKPgXj3eAAB9QsTon8dvtXAYkZAWZBzk0C55VaEHx0wTYIF6FaA4DXtcEI6UHqhj900zu1fPeGO2oElKEPoWXUKSZBGqzeC5uAIy8KVRZAkmokZD";
+	private static final String accsToken = "EAAHgsbqXKnYBALWCmhZCZAVt8ZBPrrOCV8EOxO9PJVZAUoml1aGQPnCgUeywDNhdaH8ZC3o0HhMnpmwMQ7jW75nm8TS1pmuyhpuLil8ZBz2YZAKpcdPxHFiWy67j97EVvxtmQGWUbKUCqI0UsdfQtUkcP2tfg1m1y8UCY8bh6VKJ9Lx7ZCNzSN1KifahZBLfCZARMbWRjOw2jHXDoGp5q8quIo7sUrH2XOoBZCufqjWrHP2DAZDZD";
   private final static Logger logger = Logger.getLogger("Main");
   private static final String APP_VERSION = "v1.0";
   
