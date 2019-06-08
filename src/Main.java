@@ -65,10 +65,11 @@ public class Main {
       System.out.println("opciones:");
       System.out.println("1-> Opcion uno");
       System.out.println("2-> Opcion dos");
-      System.out.println("3-> Salir");
+      System.out.println("3-> Ver mis páginas");
+      System.out.println("4-> Salir");
       
       //get option
-      opt = getUsrIn(3);
+      opt = getUsrIn(4);
       
       //switch
       switch (opt){
@@ -80,6 +81,22 @@ public class Main {
           System.out.println("Dos!");
           break;
           
+        case 3:
+          //System.out.println(objs);
+          System.out.println("Descargando las paginas");
+          logger.log(Level.INFO, "Descargando las paginas" );
+          ResponseList objs = facebook.getGroups()  ;
+          System.out.println("¿Deseas guardar los resultados?\n1-> Si\n2-> No\n");
+          if(getUsrIn(2)==1){
+            System.out.println("Guardando las paginas");
+            List<String> lineas = new ArrayList<>();
+            objs.forEach((p)->lineas.add(p.toString()) );
+            Path ruta = Paths.get(Paths.get("") + "paginas.txt");
+            Files.write(ruta, lineas, Charset.forName("UTF-8"));
+            logger.log(Level.INFO, "se guardaron las paginas en \"posts.txt\"" );
+          }
+          objs.forEach((p)->System.out.println(p) );
+          break;
         default:
           opt = 0;
       }

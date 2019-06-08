@@ -1,0 +1,6 @@
+GroupJSONImpl{version=null, name='Preguntas de Programadores', id='440506893179291', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
+GroupJSONImpl{version=null, name='CANCÚN AL MINUTO OFICIAL⏰', id='987671414664740', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
+GroupJSONImpl{version=null, name='Chistes de Programadores (Grupo)', id='413355202121674', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
+GroupJSONImpl{version=null, name='Zona Vip!!!!', id='899065983487873', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
+GroupJSONImpl{version=null, name='compañeros de secundaria', id='144082655638802', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
+GroupJSONImpl{version=null, name='Vallarta Hits', id='529409453766777', administrator=null, bookmarkOrder=null, owner=null, description='null', privacy=null, icon=null, updatedTime=null, email='null', venue=null}
